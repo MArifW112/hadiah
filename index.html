@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Untuk Yulita 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <audio id="bgm" src="assets/bgm.mp3" autoplay loop muted></audio>
+  <audio id="effectOpen" src="assets/buka-suratt.mp3"></audio>
+  <button id="play-music" class="music-btn">Putar Musik</button>
+
+  <div class="heart-background">
+    <div class="heart" style="left: 10%; animation-delay: 0s;"></div>
+    <div class="heart" style="left: 30%; animation-delay: 2s;"></div>
+    <div class="heart" style="left: 50%; animation-delay: 4s;"></div>
+    <div class="heart" style="left: 70%; animation-delay: 1s;"></div>
+    <div class="heart" style="left: 90%; animation-delay: 3s;"></div>
+  </div>
+
+  <!-- Page: Index -->
+  <div id="page-index" class="page active">
+    <div class="container">
+      <div class="text-box">
+        <h1>Untuk Yulita Nur Fathin 💖</h1>
+        <div class="buttons">
+          <div class="btn" onclick="playOpenEffect(); goToPage('page-ucapan')">🎁 Buka Pesan Ucapan</div>
+          <div class="btn" onclick="playOpenEffect(); goToPage('page-kado')">🐘 Lihat Kadonya</div>
+        </div>
+      </div>
+      <img id="pixelYulita" src="assets/pixel_cantikuu.png" alt="Pixel Yulita" class="pixel-art" />
+    </div>
+  </div>
+
+  <!-- Page: Ucapan -->
+  <div id="page-ucapan" class="page">
+    <div class="container">
+      <div class="text-box">
+        <div class="message">
+          HAPPY BIRTHDAY YANG KE 21 TAHUN SAYANGKUU💖<br><br>
+          Selamat Ulang Tahun Yulita Nur Fathin 🥳🥰 Semoga Sayang Selalu Sehat Selalu Yaa Sampe Kita Nikah Nantiii 💖<br><br>
+          Makasih Ya Sayang Udah Nerima Arip Apa Adanya 💖, Makasih Juga Udah Nerima Semua Kekurangan Arip dan Ngebantu Arip Setiap Arip Ada Kesusahan 🥰 Maafyaa Malah Jadi Sering Ngerepotin Kamu 😔, Maaf Juga Kalau Arip Masih Belum Bisa Jadi Orang Yang Kamu Mau, Kadang Nyebelin, Suka Marah-Marah, Nakal Ke Kamu, Dan Lain Lain 🥹<br><br>
+          Tapi Arip Selalu Sayang Sama Kamu, Pengen Banget Jadi Tempat Ternyaman Kamu, Tempat Kamu Cerita, Tempat Kamu Pulang, Tempat Kamu Berteduh Di Kala Mendung. Intinya I LOVE YOU SOOO MUCH!!😘💞💗. Arip Bersyukur Banget Bisa Punya Kamu Yang Selalu Ada Buat Arip Disini, Thanku For Being Here With Me Sayang 💖 <br><br>
+          Pokoknya Makasih Banyak Yaaa Udah Mau Jalanin Hubungan Sama Arip Yang Kaya Gini, Bahagia Terus Yaa Sama Arip Sayangkuu, I LOVE YOU MORE THAN ANYTHING ❤️
+        </div>
+        <div class="btn" onclick="playOpenEffect(); goToPage('page-index')">← Kembali</div>
+      </div>
+      <img src="assets/gua.png" alt="Pixel Aku" class="pixel-art" />
+    </div>
+  </div>
+
+  <!-- Page: Kado -->
+  <div id="page-kado" class="page">
+    <div class="container">
+      <div class="text-box">
+        <h2>🎀 Ini Kadoku Buat Kamu</h2>
+        <p style="font-size: 0.65rem;">
+          Maafyaa Kalau Kadonya Bukan Anak Gajah Kaya Yang Kamu Mau Hehe<br><br>
+          Tapi Disamping Ada Anak Gajah Tuh, Anggep Aja Itu Anak Gajah Yang Kamu Mau Yaaa Wkwk<br><br>
+          Klik Buka Kadonya Yaa Sayang 
+        </p>
+        <div class="btn" onclick="playOpenEffect(); showGiftModal()">🎀 Buka Kadonya</div>
+        <div class="btn" onclick="playOpenEffect(); goToPage('page-index')">← Kembali</div>
+      </div>
+      <img src="assets/imuuttt.png" alt="Pixel Kado" class="pixel-art" />
+    </div>
+  </div>
+
+  <!-- Modal Hadiah -->
+<div id="giftModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">×</span>
+    <h2>🎁 Surprise buat kamu!</h2>
+    <p>Lihat Ke Belakang Kamu Sayangkuu ❤️</p>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
